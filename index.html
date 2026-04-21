@@ -4,43 +4,62 @@
     <title>Karachi Bites</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Poppins', sans-serif;
             margin: 0;
-            background: #f8f8f8;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: #eee;
         }
 
         header {
-            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
-            color: white;
-            padding: 120px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+                        url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+            padding: 140px 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 55px;
+            font-size: 60px;
+            color: #d4af37;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .btn {
+            background: #d4af37;
+            color: black;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
         }
 
         nav {
             background: #111;
-            padding: 15px;
             text-align: center;
+            padding: 15px;
             position: sticky;
             top: 0;
         }
 
         nav a {
-            color: white;
+            color: #d4af37;
             margin: 15px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         section {
@@ -48,52 +67,55 @@
             text-align: center;
         }
 
+        h2 {
+            color: #d4af37;
+            margin-bottom: 30px;
+        }
+
         .menu {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px;
+            padding: 0 20px;
         }
 
         .card {
-            background: white;
-            margin: 15px;
-            padding: 20px;
-            width: 260px;
+            background: #1a1a1a;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .card:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(212,175,55,0.3);
         }
 
         .card img {
             width: 100%;
-            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
         }
 
-        .btn {
-            background: #ff4d4d;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
+        .card h3 {
+            margin: 10px;
         }
 
-        footer {
-            background: #111;
-            color: white;
-            padding: 20px;
+        .card p {
+            color: #d4af37;
+            margin-bottom: 15px;
         }
 
         iframe {
             width: 100%;
             height: 300px;
-            border: none;
             border-radius: 10px;
+            border: none;
+        }
+
+        footer {
+            background: #111;
+            padding: 20px;
         }
     </style>
 </head>
@@ -102,8 +124,8 @@
 
 <header id="home">
     <h1>Karachi Bites</h1>
-    <p>Fresh • Fast • Delicious</p>
-    <a href="https://wa.me/923001234567?text=Hi%20I%20want%20to%20order" class="btn">Order on WhatsApp</a>
+    <p>Luxury Dining Experience</p>
+    <a href="https://wa.me/923001234567?text=Hi%20I%20want%20to%20order" class="btn">Order Now</a>
 </header>
 
 <nav>
@@ -113,40 +135,39 @@
 </nav>
 
 <section id="menu">
-    <h2>Our Menu</h2>
+    <h2>Our Premium Menu</h2>
 
     <div class="menu">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-            <h3>Zinger Burger</h3>
-            <p>Rs. 450</p>
-        </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1598514982849-5cceac1b02b7">
-            <h3>BBQ Platter</h3>
-            <p>Rs. 1200</p>
-        </div>
+        <!-- 19 ITEMS -->
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1604908176997-431e9c8d9c77">
-            <h3>Loaded Fries</h3>
-            <p>Rs. 350</p>
-        </div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349"><h3>Zinger Burger</h3><p>Rs. 450</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1598514982849-5cceac1b02b7"><h3>BBQ Platter</h3><p>Rs. 1200</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908176997-431e9c8d9c77"><h3>Loaded Fries</h3><p>Rs. 350</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"><h3>Pizza</h3><p>Rs. 900</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908812902-8a3f58d5b7bc"><h3>Chicken Wings</h3><p>Rs. 600</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947"><h3>Steak</h3><p>Rs. 1800</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90"><h3>Pasta</h3><p>Rs. 850</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e"><h3>Sandwich</h3><p>Rs. 400</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1550317138-10000687a72b"><h3>Shawarma</h3><p>Rs. 250</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604909053799-32b2f8f9b7e3"><h3>Fried Chicken</h3><p>Rs. 700</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d"><h3>Grilled Fish</h3><p>Rs. 1500</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1589308078055-918d7c5f8d03"><h3>Biryani</h3><p>Rs. 300</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908177522-402e5c1c1d4f"><h3>Kebab Roll</h3><p>Rs. 280</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1625944525903-b7b0cfd8e9c3"><h3>Nachos</h3><p>Rs. 500</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1600891964565-9c9b4f8a6f0d"><h3>Ice Cream</h3><p>Rs. 200</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b"><h3>Cold Coffee</h3><p>Rs. 300</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add"><h3>Club Sandwich</h3><p>Rs. 550</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908176993-5d93c2f2d5c6"><h3>Cheese Balls</h3><p>Rs. 400</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1604908176980-1f9d7c6f9c6b"><h3>Mocktail</h3><p>Rs. 350</p></div>
+
     </div>
 
 </section>
 
-<section>
-    <h2>Why Choose Us?</h2>
-    <p>✔ Premium Quality Food | ✔ Quick Delivery | ✔ Affordable Prices</p>
-</section>
-
 <section id="contact">
     <h2>Visit Us</h2>
-
     <iframe src="https://maps.google.com/maps?q=karachi&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-
     <p>📞 0300-1234567</p>
 </section>
 
