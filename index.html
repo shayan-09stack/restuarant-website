@@ -3,26 +3,25 @@
 <head>
     <title>Karachi Bites</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Font -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            background: #f5f5f5;
+            background: #f8f8f8;
         }
 
         header {
-            background: url('https://images.unsplash.com/photo-1555992336-03a23c4a1f0d') center/cover;
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
             color: white;
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 50px;
+            font-size: 55px;
         }
 
         nav {
@@ -39,28 +38,38 @@
         }
 
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .card {
             background: white;
-            padding: 20px;
             margin: 15px;
-            display: inline-block;
-            width: 250px;
+            padding: 20px;
+            width: 260px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .btn {
-            display: inline-block;
             background: #ff4d4d;
             color: white;
             padding: 12px 25px;
-            margin-top: 20px;
             text-decoration: none;
             border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
         }
 
         footer {
@@ -75,8 +84,8 @@
 
 <header>
     <h1>Karachi Bites</h1>
-    <p>Delicious Food Delivered Fast</p>
-    <a href="https://wa.me/923001234567" class="btn">Order on WhatsApp</a>
+    <p>Fresh • Fast • Delicious</p>
+    <a href="https://wa.me/923001234567" class="btn">Order Now</a>
 </header>
 
 <nav>
@@ -86,28 +95,33 @@
 </nav>
 
 <section>
-    <h2>Our Specialties</h2>
+    <h2>Our Menu</h2>
 
-    <div class="card">
-        <h3>Burgers</h3>
-        <p>Juicy and fresh burgers made daily.</p>
-    </div>
+    <div class="menu">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+            <h3>Zinger Burger</h3>
+            <p>Rs. 450</p>
+        </div>
 
-    <div class="card">
-        <h3>BBQ</h3>
-        <p>Authentic Pakistani BBQ taste.</p>
-    </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598514982849-5cceac1b02b7">
+            <h3>BBQ Platter</h3>
+            <p>Rs. 1200</p>
+        </div>
 
-    <div class="card">
-        <h3>Fast Food</h3>
-        <p>Quick, tasty, and affordable meals.</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-431e9c8d9c77">
+            <h3>Loaded Fries</h3>
+            <p>Rs. 350</p>
+        </div>
     </div>
 
 </section>
 
 <section>
     <h2>Why Choose Us?</h2>
-    <p>✔ Fresh Ingredients | ✔ Fast Delivery | ✔ Affordable Prices</p>
+    <p>✔ Premium Quality Food | ✔ Quick Delivery | ✔ Affordable Prices</p>
 </section>
 
 <section>
